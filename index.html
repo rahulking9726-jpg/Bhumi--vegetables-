@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhumi Vegetables</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f3fff2;color:#18351c}
+header{background:#16833a;color:white;text-align:center;padding:25px 10px}
+header h1{margin:0;font-size:30px}
+header p{margin-bottom:0}
+.hero{text-align:center;padding:22px 12px}
+.hero h2{color:#16833a}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:12px}
+.card{background:white;padding:15px 8px;text-align:center;border-radius:12px;box-shadow:0 2px 8px #0001}
+.emoji{font-size:48px}
+.card h3{margin:8px 0}
+.price{font-weight:bold;color:#16833a;font-size:19px}
+button{background:#16833a;color:white;border:0;padding:11px;border-radius:7px;font-size:15px;width:100%;margin-top:8px}
+.contact{text-align:center;padding:20px}
+footer{background:#18351c;color:white;text-align:center;padding:15px}
+</style>
+</head>
+<body>
+<header>
+<h1>🥬 Bhumi Vegetables</h1>
+<p>ताज़ी सब्जियाँ, सही दाम पर!</p>
+</header>
+<section class="hero">
+<h2>आज की ताज़ी सब्जियाँ 🥦</h2>
+<p>अपनी पसंद की सब्जियाँ चुनें और WhatsApp पर ऑर्डर करें।</p>
+</section>
+<section class="products">
+<div class="card"><div class="emoji">🥔</div><h3>आलू</h3><p class="price">₹ कीमत पूछें</p><button onclick="order('आलू')">ऑर्डर करें</button></div>
+<div class="card"><div class="emoji">🍅</div><h3>टमाटर</h3><p class="price">₹ कीमत पूछें</p><button onclick="order('टमाटर')">ऑर्डर करें</button></div>
+<div class="card"><div class="emoji">🧅</div><h3>प्याज़</h3><p class="price">₹ कीमत पूछें</p><button onclick="order('प्याज़')">ऑर्डर करें</button></div>
+<div class="card"><div class="emoji">🥒</div><h3>खीरा</h3><p class="price">₹ कीमत पूछें</p><button onclick="order('खीरा')">ऑर्डर करें</button></div>
+<div class="card"><div class="emoji">🌶️</div><h3>हरी मिर्च</h3><p class="price">₹ कीमत पूछें</p><button onclick="order('हरी मिर्च')">ऑर्डर करें</button></div>
+<div class="card"><div class="emoji">🥬</div><h3>हरी सब्जियाँ</h3><p class="price">₹ कीमत पूछें</p><button onclick="order('हरी सब्जियाँ')">ऑर्डर करें</button></div>
+</section>
+<section class="contact">
+<h2>📲 घर बैठे ऑर्डर करें</h2>
+<p>WhatsApp पर सब्जियों के दाम और उपलब्धता पूछें।</p>
+<button onclick="order('सब्जियों की लिस्ट')">WhatsApp पर ऑर्डर करें</button>
+</section>
+<footer>© 2026 Bhumi Vegetables | ताज़गी हर दिन 🥬</footer>
+<script>
+function order(item){
+window.open('https://wa.me/919664722574?text='+encodeURIComponent('नमस्ते Bhumi Vegetables! मुझे '+item+' ऑर्डर करना है। कृपया कीमत बताएं।'),'_blank');
+}
+</script>
+</body>
+  </html>
